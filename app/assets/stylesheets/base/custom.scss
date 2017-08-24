@@ -1,0 +1,126 @@
+/* Only demo */
+@media (max-width: 1000px) {
+  .welcome-message {
+    display: none;
+  }
+}
+
+@font-face {
+    font-family: 'dosisbold';
+    src: font-url('dosis-bold-webfont.woff2') format('woff2'),
+         font-url('dosis-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'dosisextrabold';
+    src: font-url('dosis-extrabold-webfont.woff2') format('woff2'),
+         font-url('dosis-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'dosisextralight';
+    src: font-url('dosis-extralight-webfont.woff2') format('woff2'),
+         font-url('dosis-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'dosislight';
+    src: font-url('dosis-light-webfont.woff2') format('woff2'),
+         font-url('dosis-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'dosismedium';
+    src: font-url('dosis-medium-webfont.woff2') format('woff2'),
+         font-url('dosis-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'dosisregular';
+    src: font-url('dosis-regular-webfont.woff2') format('woff2'),
+         font-url('dosis-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'dosissemibold';
+    src: font-url('dosis-semibold-webfont.woff2') format('woff2'),
+         font-url('dosis-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  font-family: "dosisregular"
+}
+
+.nav-label {
+   padding-left: 10%;
+}
+
+.nav > li > a {
+  color: #fff;
+  font-weight: 800;
+  font-size: medium;
+}
+
+.nav-header .text-muted {
+    color: #fff;
+    font-size: small;
+}
+
+.navbar-default .nav > li > a:hover, .navbar-default .nav > li > a:focus {
+  background-color: $blue;
+  color: white;
+}
+
+ul.nav-second-level {
+  background: $navy;
+}
+
+.nav > li.active {
+  border-left: 0px solid #009b49;
+  background: $blue;
+}
+
+.ibox {
+-webkit-box-shadow: 0.5px 0.5px 0.5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0.5px 0.5px 0.5px 0px rgba(0,0,0,0.25);
+    box-shadow: 0.5px 0.5px 0.5px 0px rgba(0,0,0,0.25);
+}

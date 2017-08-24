@@ -1,0 +1,71 @@
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element">
+                    <span>
+                        <img alt="image" class="img-circle" src="<%= image_url 'profile_small.jpg' %>"/>
+                    </span>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="clear">
+                            <span class="block m-t-xs">
+                                <strong class="font-bold">Moms Cleaning Co.</strong>
+                             </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="logo-element">
+                   <%= image_tag "pressdwhitesquare.png", size: "24" %>
+                </div>
+            </li>
+            <li class="<%= is_active_controller('gridoptions') %>">
+                <%= link_to dashboards_dashboard_2_path do %>
+                <%= image_tag "flaticon/house.png", size: "24" %>
+                <span class="nav-label" data-i18n="nav.gridoptions">Dashboard</span>
+                <% end %>
+            </li>
+            <li class="<%= is_active_controller('gridoptions') %>">
+                <%= link_to dashboards_dashboard_2_path do %>
+                <%= image_tag "flaticon/agenda.png", size: "24" %>
+                <span class="nav-label" data-i18n="nav.gridoptions">Jobs</span>
+                <% end %>
+            </li>
+            <li class="<%= is_active_controller('gridoptions') %>">
+                <%= link_to dashboards_dashboard_2_path do %>
+                <%= image_tag "flaticon/paper-plane-1.png", size: "24" %>
+                <span class="nav-label" data-i18n="nav.gridoptions">Messages</span>
+                <% end %>
+            </li>
+            <li class="<%= is_active_controller('gridoptions') %>">
+                <%= link_to dashboards_dashboard_2_path do %>
+                <%= image_tag "flaticon/calendar-5.png", size: "24" %>
+                <span class="nav-label" data-i18n="nav.gridoptions">Schedule</span>
+                <% end %>
+            </li>
+            <li class="<%= is_active_controller('gridoptions') %>">
+                <%= link_to dashboards_dashboard_2_path do %>
+                <%= image_tag "flaticon/users.png", size: "24" %>
+                <span class="nav-label" data-i18n="nav.gridoptions">Rota</span>
+                <% end %>
+            </li>
+            <li class="<%= is_active_controller('gridoptions') %>">
+                <%= link_to dashboards_dashboard_2_path do %>
+                <%= image_tag "flaticon/calculator-1.png", size: "24" %>
+                <span class="nav-label" data-i18n="nav.gridoptions">Reports</span>
+                <% end %>
+            </li>
+            
+            <li class="<%= is_active_controller('graphs') %>">
+                <a href="#"><%= image_tag "flaticon/settings-4.png", size: "24" %> <span class="nav-label" data-i18n="nav.graphs">Settings</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse <%= is_active_controller('graphs', 'in') %>">
+                    <li class="<%= is_active_action('flot') %>"><%= link_to "Company Information", dashboards_dashboard_2_path %></li>
+                    <li class="<%= is_active_action('morris') %>"><%= link_to "Staff", dashboards_dashboard_2_path %></li>
+                    <li class="<%= is_active_action('rickshaw') %>"><%= link_to "Price List", dashboards_dashboard_2_path %> </li>
+                    <li class="<%= is_active_action('chartjs') %>"><%= link_to "Service Areas", dashboards_dashboard_2_path %></li>
+                    <li class="<%= is_active_action('chartist') %>"><%= link_to "Opening Hours", dashboards_dashboard_2_path %></li>
+                    <li class="<%= is_active_action('c3charts') %>"><%= link_to "Intergrations", dashboards_dashboard_2_path %></li>
+                    <li class="<%= is_active_action('peity') %>"><%= link_to "Billing", dashboards_dashboard_2_path %></li>
+                </ul>
+            </li>
+    </div>
+</nav>
